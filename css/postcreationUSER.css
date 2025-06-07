@@ -1,0 +1,405 @@
+/* General styles */
+body {
+    background-color: #f8f9fa; /* Light background */
+    color: #343a40; /* Dark text */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Dashboard layout */
+.dashboard-container {
+    display: flex; /* Flexbox layout */
+}
+
+/* Sidebar styles */
+/* Vertical Sidebar */
+.dashboard-sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    min-width: 250px; /* Prevents shrinking */
+    background-color: #ffffff; /* White background */
+    border-right: 1px solid #e9ecef; /* Light border for separation */
+    padding: 8px; /* Padding for sidebar */
+    height: 100vh; /* Full height */
+    position: sticky; /* Sticky sidebar */
+    top: 0; /* Stick to the top */
+    flex-shrink: 0; /* Prevents shrinking */
+    z-index: 1000; /* Ensure sidebar is above other content */
+}
+
+
+/* Sidebar navigation */
+.sidebar-nav {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar-nav-item {
+    margin-bottom: 15px; /* Space between items */
+}
+
+.sidebar-nav-link {
+    display: flex; /* Flex for alignment */
+    align-items: center; /* Center items */
+    padding: 10px 15px; /* Padding */
+    color: #343a40; /* Dark text */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth hover */
+}
+
+/* .sidebar-nav-link:hover {
+    background-color: #e9ecef; 
+} */
+
+
+
+/* Main content area */
+.dashboard-main {
+    flex-grow: 1; /* Expand to fill space */
+    padding: 20px; /* Padding around content */
+}
+
+.dashboard-main section {
+    margin-top: 2%;
+}
+
+/* User profile card */
+.user-profile-card {
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding */
+    margin-bottom: 20px; /* Space below */
+}
+
+/* User statistics */
+.user-stats {
+    margin-top: 20px; /* Space above stats */
+}
+
+.stat-item {
+    background-color: #f1f1f1; /* Light background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding */
+}
+/* Enhanced Profile CSS */
+.profile-header {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+
+
+.info-card, .stats-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover, .stats-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-item {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: background 0.3s ease;
+}
+
+.info-item:hover {
+    background: #e9ecef;
+}
+
+.stat-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    background: #6844E4;
+    color: white;
+}
+
+.stat-item:hover .stat-value,
+.stat-item:hover .stat-label {
+    color: white !important;
+}
+
+.stat-value {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.bi {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        padding: 1.5rem;
+    }
+    
+    .stat-value {
+        font-size: 1.5rem;
+    }
+    
+    .info-card, .stats-card {
+        margin-bottom: 1.5rem;
+    }
+}
+/* Post creation form */
+.post-form-card {
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 20px; /* Padding */
+}
+
+/* Post display styles */
+.list-group-item {
+    border-radius: 8px; /* Rounded corners */
+    background: #ffffff; /* White background */
+    border: 1px solid #e9ecef; /* Light border */
+    padding: 20px; /* Padding */
+    margin-bottom: 20px; /* Space below */
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Column layout */
+    justify-content: space-between; /* Spaced content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column; /* Stack items */
+    }
+
+    .dashboard-sidebar {
+        width: 100%; /* Full width */
+        height: auto; /* Auto height */
+        border-right: none; /* Remove right border */
+        border-bottom: 1px solid #e9ecef; /* Add bottom border */
+    }
+
+    .dashboard-main {
+        padding: 10px; /* Reduce padding */
+    }
+}
+
+/* Media elements inside posts */
+.post-image, .post-video {
+    width: 100%; /* Full width */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below */
+    display: block; /* Stack vertically */
+}
+
+/* Post content layout */
+.content {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column direction */
+    justify-content: space-between; /* Spaced content */
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #6844E4; /* Primary button */
+    border-color: #6844E4; /* Border color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker hover */
+    border-color: #004085; /* Darker border */
+}
+
+/* Alert styles */
+.alert {
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Typography styles */
+h2, h3, h5 {
+    color: #343a40; /* Dark headings */
+}
+
+.text-primary {
+    color: #6844E4; /* Primary text color */
+}
+
+/* Grid layout for posts */
+.posts-grid {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Responsive columns */
+    gap: 1.5rem; /* Spacing */
+    padding: 1rem; /* Padding */
+}
+
+/* Post card styling */
+.post-card {
+    background: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow: hidden; /* Hide overflow */
+    transition: transform 0.3s ease; /* Smooth hover */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Column layout */
+    height: 450px; /* Fixed height */
+    overflow-y: auto; /* Scrollable */
+}
+
+.post-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+}
+
+/* Post content inside card */
+.post-content {
+    padding: 1rem; /* Padding */
+    flex-grow: 1; /* Fill space */
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Ensure text wraps */
+}
+
+/* Post title styling */
+.post-title {
+    font-size: 1.2rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 0.5rem; /* Space below */
+}
+
+/* Post text styling */
+.post-text {
+    font-size: 0.95rem; /* Font size */
+    color: #333; /* Dark text */
+    margin-bottom: 1rem; /* Space below */
+}
+
+/* Media container inside posts */
+.post-media-container {
+    width: 100%; /* Full width */
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Stack media */
+    align-items: center; /* Center items */
+    background: #f9f9f9; /* Light background */
+    gap: 10px; /* Space between items */
+}
+
+/* Post meta information */
+.post-meta {
+    padding: 0.5rem 1rem; /* Padding */
+    font-size: 0.9rem; /* Font size */
+    color: #666; /* Grey text */
+    border-top: 1px solid #eee; /* Top border */
+}
+
+/* Responsive grid layout */
+@media (max-width: 768px) {
+    .posts-grid {
+        grid-template-columns: 1fr; /* Single column */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .dashboard-sidebar {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Auto height */
+        position: static; /* Remove sticky positioning */
+        border-right: none; /* Remove right border */
+        border-bottom: 1px solid #e9ecef; /* Add bottom border */
+    }
+
+    .navbar {
+        position: sticky; /* Keep navbar sticky on mobile */
+        top: 0; /* Stick to the top */
+        z-index: 1001; /* Ensure navbar is above sidebar */
+    }
+
+    .dashboard-main {
+        padding: 10px; /* Reduce padding */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Scroll to Top Button Arrow  */ 
+  .scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #6844E4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    background: #0056b3;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.scroll-to-top .bi {
+    animation: bounce 1s infinite;
+}
+

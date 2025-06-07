@@ -1,0 +1,341 @@
+/* Post Card Styling */
+.post-card {
+    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid #d1dbe8;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+/* Hover Effect on Post Cards */
+.post-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #ffffff 0%, #f1f8e9 100%);
+}
+
+/* Image and Video */
+.post-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Card Body */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+    overflow-y: auto;
+    max-height: 300px;
+    box-sizing: border-box;
+}
+
+/* Card Title */
+.card-title {
+    color: #37474f;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Card Text */
+.card-text {
+    white-space: normal;
+    line-height: 1.6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* Button Styling */
+.btn {
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: rgb(27, 0, 0);
+    border: none;
+    font-size: 1rem;
+}
+
+/* Button Hover Effects */
+.btn-outline-primary:hover {
+    background-color: #000508;
+    color: #37474f;
+}
+
+.btn-primary:hover {
+    background-color: #3382b0;
+    color: white;
+}
+/* Button Styling */
+.btn {
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease;
+    padding: 10px 20px;
+    background-color: #5e99d3;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+
+/* Button Hover Effects */
+.btn-outline-primary:hover {
+    background-color: #81c6f5;
+    color: #37474f;
+}
+
+.btn-primary:hover {
+    background-color: #3382b0;
+    color: white;
+}
+/* Navbar Styling */
+.navbar {
+    background-color: #f8f9fa; /* Light background for a clean look */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo Section */
+.navbar-brand .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand .logo-img {
+    border-radius: 50%;
+    border: 2px solid #00aaff; /* Add border for a light accent */
+}
+
+.navbar-brand .logo-text {
+    color: #007bff; /* Soft blue text */
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #6ec1e4, #00aaff, #80d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s linear infinite;
+}
+
+/* Gradient Animation */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Logo Hover Effect */
+.navbar-brand .logo-container:hover {
+    transform: scale(1.05);
+}
+
+.navbar-brand .logo-container:hover .logo-text {
+    text-shadow: 0px 0px 5px #80d4ff;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-item .nav-link {
+    color: #555; /* Light grey for a clean look */
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 15px; /* Adjust height of nav items */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #e6f7ff; /* Subtle hover effect */
+    color: #007bff;
+}
+
+
+
+/* Buttons */
+.btn-outline-light {
+    color: #007bff;
+    border: 1px solid #007bff;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-outline-light:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #7540D2;
+    color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #813CC2;
+    /* transform: translateY(-2px); */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-nav .nav-item .nav-link {
+        padding: 8px 12px;
+    }
+    .navbar-brand .logo-text {
+        font-size: 22px;
+    }
+}
+
+/* Typing Effect */
+.typing-effect {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: typing 3s steps(30, end) infinite alternate;
+}
+
+/* Quote Styling */
+.quote {
+    color: #555;
+    font-size: 1.25rem;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Smooth Background Color */
+.hero {
+    background: linear-gradient(135deg, #ffffff 0%, #f1f8e9 100%);
+}
+
+/* Button Styling */
+.btn {
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    
+}
+
+/* Button Hover Effects */
+.btn-primary:hover {
+    background-color: #587bd3;
+    color: rgb(255, 255, 255);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 20px;
+    }
+    .typing-effect {
+        font-size: 2.5rem;
+    }
+}
+
+/* Filters Sidebar Styling */
+
+/* h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #6ec1e4, #00aaff, #80d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.list-group {
+    border: 1px solid #e0e0e0; /* Light border for the group */
+    border-radius: 10px;
+    overflow: hidden; /* Ensures a neat layout */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.list-group-item {
+    background-color: #f9f9f9; /* Light background */
+    color: #555; /* Neutral text color */
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 15px 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer; /* Indicates interactivity */
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.list-group-item:hover {
+    background-color: #e6f7ff; /* Soft hover effect */
+    color: #007bff;
+    box-shadow: inset 0 2px 5px rgba(0, 123, 255, 0.2); /* Hover shadow */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.list-group-item a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits text color */
+    transition: color 0.3s ease-in-out;
+}
+
+.list-group-item a:hover {
+    color: #0056b3; /* Darker blue for hover state */
+}
+
+.list-group-item:last-child {
+    border-bottom-left-radius: 10px; /* Rounded corners for last item */
+    border-bottom-right-radius: 10px;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 10px; /* Rounded corners for first item */
+    border-top-right-radius: 10px;
+}
+
+.list-group-item:before {
+    content: "›"; /* Adds a decorative icon */
+    font-size: 1.2rem;
+    color: #80d4ff;
+    margin-right: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    .list-group-item {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}

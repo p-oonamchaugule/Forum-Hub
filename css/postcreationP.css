@@ -1,0 +1,90 @@
+/* General styles */
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+form.card {
+    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #6844E4;
+    border-color: #6844E4;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Posts list */
+.list-group-item {
+    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px; /* Increased card height */
+    max-height: 500px;
+    overflow-y: auto; /* Allow scrolling if content exceeds */
+    box-sizing: border-box;
+}
+
+/* Multiple posts in row */
+.row > .col-md-6, .row > .col-lg-4 {
+    padding: 10px;
+}
+
+/* Image and Video */
+.post-image, .post-video {
+    width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Post content */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/* Posts item hover effect */
+.list-group-item h5 {
+    color: #6844E4;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+/* Small text adjustments */
+.list-group-item p {
+    white-space: normal; /* Ensures text wraps within the card */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Handle long content better */
+.content p {
+    flex-grow: 1;
+    min-height: 100px;
+    word-wrap: break-word;
+}
+
+
